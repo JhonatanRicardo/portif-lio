@@ -21,7 +21,8 @@ body {
     margin: 0 auto;
 }
 
-button:hover, form .btn-enviar input:hover  {
+button:hover,
+form .btn-enviar input:hover {
     box-shadow: opx opx 8px #f0cd0368;
     transform: scale(1.05);
 }
@@ -50,7 +51,7 @@ button:hover, form .btn-enviar input:hover  {
 /* ESTILO DO CABEÇALHO */
 .img-logo {
     width: 150px;
-    
+
 }
 
 header {
@@ -208,7 +209,7 @@ section.sobre .flex {
     text-align: justify;
 }
 
- .btn-social button {
+.btn-social button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -315,6 +316,7 @@ form .btn-enviar input {
     cursor: pointer;
     transition: .2s;
 }
+
 /*rodape*/
 
 footer {
@@ -325,12 +327,15 @@ footer {
 footer .flex {
     justify-content: space-between;
 }
+
 footer .line-footer {
     padding: 20px 0;
 }
+
 .borda {
     border-top: 2px solid #ef9c01;
 }
+
 footer .line-footer p i {
     color: #ef9c01;
     font-size: 22px;
@@ -344,4 +349,89 @@ footer .line-footer p a {
 .logo-footer img {
     width: 100px;
     height: 100px;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    /*CABEÇALHO*/
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /*TOPO DO SITE*/
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site H1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    selection.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    /*Especialidades*/
+    section .especialidades {
+        padding: 40px 8%;
+    }
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portifolio .flex {
+        gap: 60px;
+    }
+
+    footer .flex {
+        flex-direction: column;
+    }
+    footer .line-footer {
+        text-align: center;
+    }
+
 }
